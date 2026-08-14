@@ -346,3 +346,63 @@ Business Rules
 Expected Business Value
 
 This functionality provides investors with a consolidated view of their holdings and portfolio value, enabling better investment monitoring and decision-making.
+
+User Story 7 – Profit & Loss Calculation
+
+Story ID: US-007
+Epic: Portfolio Management
+Priority: High
+
+User Story
+
+As an Investor, I want to view the profit or loss of my equity holdings, so that I can understand the performance of my investments.
+
+Acceptance Criteria
+
+AC-01 – Calculate Unrealized P&L
+
+Given the investor holds an equity,
+when the current market price is available,
+then the system should calculate the unrealized profit or loss based on the holding's average purchase price and current market price.
+
+AC-02 – Display P&L Amount
+
+Given a profit or loss has been calculated,
+when the investor views the portfolio,
+then the system should display the P&L amount for each holding.
+
+AC-03 – Display P&L Percentage
+
+Given the required price and quantity information is available,
+when the system calculates P&L,
+then the system should display the corresponding P&L percentage.
+
+AC-04 – Total Portfolio P&L
+
+Given the investor has multiple holdings,
+when the investor views the portfolio summary,
+then the system should display the total portfolio profit or loss.
+
+AC-05 – Realized P&L
+
+Given the investor has completed a sell transaction,
+when the transaction is recorded,
+then the system should calculate the realized profit or loss according to the configured calculation method.
+
+AC-06 – Updated Calculation
+
+Given the market price changes,
+when updated market data becomes available,
+then the unrealized P&L should be recalculated using the latest available price.
+
+Business Rules
+
+- P&L calculations must use the defined cost-basis methodology.
+- Unrealized P&L is based on the current market price.
+- Realized P&L is calculated for completed sell transactions.
+- P&L percentage must use a consistently defined calculation formula.
+- Only authorized users should be able to view portfolio P&L.
+
+Expected Business Value
+
+This functionality helps investors monitor investment performance and understand both realized and unrealized gains or losses across their portfolio.
