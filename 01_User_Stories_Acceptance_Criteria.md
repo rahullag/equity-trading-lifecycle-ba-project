@@ -524,3 +524,63 @@ Business Rules
 Expected Business Value
 
 This functionality enables investors to review their trading activity, support portfolio analysis, and maintain a clear historical record of transactions.
+
+User Story 10 – Risk & Limit Validation
+
+Story ID: US-010
+Epic: Risk Management
+Priority: Critical
+
+User Story
+
+As a Risk Analyst, I want the trading system to validate orders against defined risk and trading limits, so that unauthorized or excessive trades are prevented.
+
+Acceptance Criteria
+
+AC-01 – Order Limit Validation
+
+Given a trader submits an order,
+when the order reaches the validation stage,
+then the system should check the order against applicable trading limits.
+
+AC-02 – Quantity Limit
+
+Given a maximum quantity limit is configured,
+when the trader submits an order exceeding the permitted quantity,
+then the system should reject the order and display an appropriate reason.
+
+AC-03 – Exposure Limit
+
+Given an exposure limit is configured for the trader or account,
+when a new order would cause the limit to be exceeded,
+then the system should reject the order.
+
+AC-04 – Valid Order
+
+Given an order satisfies all applicable risk and trading limits,
+when validation is completed,
+then the system should allow the order to proceed to the next processing stage.
+
+AC-05 – Validation Failure
+
+Given an order fails a risk validation,
+when the validation is completed,
+then the system should record the rejection reason.
+
+AC-06 – Audit Record
+
+Given an order has undergone risk validation,
+when the validation is completed,
+then the system should maintain an appropriate audit record of the validation result.
+
+Business Rules
+
+- All applicable risk and trading limits must be evaluated before order execution.
+- Orders exceeding configured limits must not proceed without authorized handling.
+- Risk-limit configurations must be maintained by authorized users.
+- Risk validation results should be auditable.
+- Limit rules may vary based on account, trader, security, or order type.
+
+Expected Business Value
+
+This functionality helps control trading risk, prevents orders that violate defined limits, and provides an auditable validation process for the trading lifecycle.
