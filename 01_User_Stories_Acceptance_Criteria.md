@@ -644,3 +644,64 @@ Business Rules
 Expected Business Value
 
 This functionality enables traders to participate in the futures market while ensuring that contract, quantity, margin, and risk requirements are validated before order submission.
+
+User Story 12 – Options Order Placement
+
+Story ID: US-012
+Epic: Derivatives Trading
+Priority: High
+
+User Story
+
+As a Trader, I want to place an options order, so that I can take a position using a call or put option based on my trading strategy.
+
+Acceptance Criteria
+
+AC-01 – Select Options Contract
+
+Given the trader is on the derivatives trading screen,
+when the trader searches for an options contract,
+then the system should display available contracts matching the search criteria.
+
+AC-02 – Contract Details
+
+Given an options contract is selected,
+when the trader views the contract,
+then the system should display the underlying asset, option type, strike price, expiry date, contract size, and applicable price information.
+
+AC-03 – Select Option Type
+
+Given the trader is placing an options order,
+when the trader selects the contract,
+then the system should identify whether it is a Call or Put option.
+
+AC-04 – Enter Order Details
+
+Given the trader has selected an options contract,
+when the trader enters order details,
+then the system should allow the trader to enter buy/sell side, quantity, order type, and price where applicable.
+
+AC-05 – Contract Validation
+
+Given the trader submits an options order,
+when the order is validated,
+then the system should check the contract validity, quantity, lot size, and expiry details.
+
+AC-06 – Successful Submission
+
+Given the options order passes all applicable validations,
+when the trader confirms the order,
+then the system should submit the order and generate a unique order ID.
+
+Business Rules
+
+- Options orders must reference a valid and active contract.
+- The system must identify the option type as Call or Put.
+- Strike price and expiry date must correspond to the selected contract.
+- Order quantity must comply with the applicable lot-size rules.
+- Expired contracts must not be available for new order placement.
+- Orders must satisfy applicable trading and risk validations.
+
+Expected Business Value
+
+This functionality enables traders to participate in the options market while ensuring that contract, quantity, expiry, and trading rules are validated before order submission.
