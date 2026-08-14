@@ -6,15 +6,13 @@
 
 ## Project Overview
 
-An end-to-end Business Analyst portfolio project focused on the **Equity Trading & Trade Lifecycle Management** domain.
+An end-to-end Business Analyst portfolio project focused on the Equity Trading & Trade Lifecycle Management domain.
 
 The project demonstrates business analysis across requirements, process mapping, Agile user stories, acceptance criteria, use cases, requirements traceability, UAT, and data analysis.
 
 ### End-to-End Lifecycle
 
-**Order Capture → Validation → Risk Check → Execution → Trade Confirmation → Settlement → Exception Management → Reporting**
-
----
+Order Capture → Validation → Risk Check → Execution → Trade Confirmation → Settlement → Exception Management → Reporting
 
 ## Business Problem
 
@@ -29,8 +27,6 @@ Trading operations involve multiple stages and stakeholders. Poor process visibi
 
 This project defines a structured requirements and process framework to improve visibility, controls, traceability, and operational decision-making.
 
----
-
 ## Business Objectives
 
 - Standardize order and trade management
@@ -44,41 +40,35 @@ This project defines a structured requirements and process framework to improve 
 - Maintain requirements traceability
 - Support UAT and business validation
 
----
-
 ## Trade Lifecycle
 
-```text
 Client / Trader
-      ↓
+↓
 Order Capture
-      ↓
+↓
 Order Validation
-      ↓
+↓
 Risk & Limit Check
-      ↓
+↓
 Order Submission
-      ↓
+↓
 Trade Execution
-      ↓
+↓
 Trade Confirmation
-      ↓
+↓
 Settlement
-      ↓
+↓
 Settlement Successful?
-    ↙       ↘
-  Yes        No
-   ↓          ↓
-Completed   Exception
-             ↓
-        Investigation
-             ↓
-          Resolution
-             ↓
-          Reporting
-```
-
----
+↙              ↘
+Yes              No
+↓                 ↓
+Completed       Exception
+                  ↓
+             Investigation
+                  ↓
+              Resolution
+                  ↓
+               Reporting
 
 ## Business Analysis Deliverables
 
@@ -94,27 +84,41 @@ Completed   Exception
 | UAT & Test Scenarios | Business validation and testing |
 | Data Dictionary | Key trading and operational data definitions |
 
----
-
 ## Project Structure
 
-```text
 equity-trading-lifecycle-ba-project/
 │
 ├── README.md
-├── BRD.md
-├── FRD.md
 ├── 01_User_Stories_Acceptance_Criteria.md
 │
 └── docs/
-    ├── trade-lifecycle-process-flow.md
-    ├── use-cases.md
+    ├── BRD.md
+    ├── FRD.md
+    ├── data-dictionary.md
     ├── requirements-traceability-matrix.md
+    ├── trade-lifecycle-process-flow.md
     ├── uat-test-scenarios.md
-    └── data-dictionary.md
-```
+    └── use-cases.md
 
----
+## Business Analysis Flow
+
+Business Problem
+↓
+Business Requirements (BRD)
+↓
+Functional Requirements (FRD)
+↓
+User Stories
+↓
+Acceptance Criteria
+↓
+Process & Use Cases
+↓
+Requirements Traceability (RTM)
+↓
+UAT & Test Scenarios
+↓
+Data Dictionary & Analysis
 
 ## Capital Markets Concepts Covered
 
@@ -161,8 +165,6 @@ equity-trading-lifecycle-ba-project/
 - Auditability
 - Data Quality
 
----
-
 ## Business Analyst Skills Demonstrated
 
 - Business Problem Analysis
@@ -181,8 +183,6 @@ equity-trading-lifecycle-ba-project/
 - Exception Analysis
 - Reporting Requirements
 
----
-
 ## Key KPIs
 
 - Total Orders
@@ -196,27 +196,21 @@ equity-trading-lifecycle-ba-project/
 - Exception Resolution Time
 - Portfolio P&L
 
----
-
 ## Requirements Traceability
-
-```text
-Business Requirement
-        ↓
-Functional Requirement
-        ↓
-User Story
-        ↓
-Acceptance Criteria
-        ↓
-Use Case
-        ↓
-Test Scenario / UAT
-```
 
 The RTM connects business requirements with functional requirements, user stories, acceptance criteria, use cases, and testing activities.
 
----
+Business Requirement
+↓
+Functional Requirement
+↓
+User Story
+↓
+Acceptance Criteria
+↓
+Use Case
+↓
+Test Scenario / UAT
 
 ## UAT & Testing
 
@@ -237,19 +231,15 @@ The project includes UAT scenarios covering:
 
 Negative scenarios are also included for invalid orders, insufficient holdings, risk-limit breaches, expired contracts, and settlement failures.
 
----
-
 ## Tools & Methods
 
-**Business Analysis:** BRD, FRD, User Stories, Use Cases, RTM, UAT
+Business Analysis: BRD, FRD, User Stories, Use Cases, RTM, UAT
 
-**Capital Markets:** Equity Trading, Trade Lifecycle, Settlement, Derivatives, Portfolio
+Capital Markets: Equity Trading, Trade Lifecycle, Settlement, Derivatives, Portfolio
 
-**Analytics:** Excel, SQL, KPI Analysis, Data Analysis
+Analytics: Excel, SQL, KPI Analysis, Data Analysis
 
-**Methodology:** Agile
-
----
+Methodology: Agile
 
 ## Expected Business Value
 
@@ -264,13 +254,9 @@ The proposed solution can help improve:
 - Requirement traceability
 - Audit readiness
 
----
-
 ## Interview Summary
 
-> I developed a Business Analyst portfolio project around an Equity Trading and Trade Lifecycle Management platform. I defined the business problem and requirements, converted them into functional requirements, created 15 Agile user stories with acceptance criteria, documented use cases and the end-to-end trade lifecycle, created an RTM, and prepared UAT scenarios and a data dictionary. The project covers order management, execution, settlement, exceptions, risk controls, derivatives, portfolio management and reporting.
-
----
+I developed a Business Analyst portfolio project around an Equity Trading and Trade Lifecycle Management platform. I defined the business problem and requirements, converted them into functional requirements, created 15 Agile user stories with acceptance criteria, documented use cases and the end-to-end trade lifecycle, created an RTM, and prepared UAT scenarios and a data dictionary. The project covers order management, execution, settlement, exceptions, risk controls, derivatives, portfolio management and reporting.
 
 ## Disclaimer
 
@@ -278,12 +264,10 @@ This is an independent portfolio project created for demonstrating Business Anal
 
 The project does not connect to live stock exchanges or execute real-money transactions. Any sample data used is synthetic.
 
----
-
 ## Project Status
 
-**Status:** BA Portfolio Project — Documentation Complete
+Status: BA Portfolio Project — Documentation Complete
 
-**Domain:** Capital Markets / Equity Trading
+Domain: Capital Markets / Equity Trading
 
-**Role:** Business Analyst
+Role: Business Analyst
