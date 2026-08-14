@@ -228,3 +228,62 @@ Business Rules
 Expected Business Value
 
 This functionality provides transparency into the order lifecycle and enables traders to monitor their trades and take appropriate action.
+
+User Story 5 – Order Cancellation
+
+Story ID: US-005
+Epic: Order Management
+Priority: High
+
+User Story
+
+As a Trader, I want to cancel an eligible open order, so that I can prevent an unwanted order from being executed.
+
+Acceptance Criteria
+
+AC-01 – Cancel Option
+
+Given the trader has an eligible open order,
+when the trader selects the order,
+then the system should provide a cancellation option.
+
+AC-02 – Cancellation Confirmation
+
+Given the trader selects cancel,
+when the cancellation request is initiated,
+then the system should ask the trader to confirm the cancellation.
+
+AC-03 – Successful Cancellation
+
+Given the order is eligible for cancellation,
+when the trader confirms the cancellation,
+then the system should send the cancellation request and update the order status accordingly.
+
+AC-04 – Ineligible Order
+
+Given an order has already been fully executed,
+when the trader attempts to cancel it,
+then the system should prevent cancellation and display an appropriate message.
+
+AC-05 – Cancellation Failure
+
+Given the cancellation request cannot be processed,
+when the trader attempts to cancel the order,
+then the system should display the cancellation failure reason where available.
+
+AC-06 – Order History
+
+Given an order has been cancelled,
+when the trader views the order history,
+then the system should display the order with a Cancelled status.
+
+Business Rules
+
+- Only eligible open orders can be cancelled.
+- Fully executed orders cannot be cancelled.
+- The system must record the cancellation event.
+- Cancelled orders must remain available in order history.
+
+Expected Business Value
+
+This functionality allows traders to manage open orders effectively and reduces the risk of unintended trade execution.
