@@ -406,3 +406,62 @@ Business Rules
 Expected Business Value
 
 This functionality helps investors monitor investment performance and understand both realized and unrealized gains or losses across their portfolio.
+
+User Story 8 – Trade Confirmation
+
+Story ID: US-008
+Epic: Trade Processing
+Priority: High
+
+User Story
+
+As a Trader, I want to receive confirmation when my order is executed, so that I have a clear record of the completed trade.
+
+Acceptance Criteria
+
+AC-01 – Trade Execution
+
+Given an order has been successfully executed,
+when the execution is received by the trading system,
+then the system should create a trade confirmation.
+
+AC-02 – Confirmation Details
+
+Given a trade confirmation has been generated,
+when the trader views the confirmation,
+then the system should display the trade ID, order ID, security, buy/sell side, quantity, execution price, and execution date/time.
+
+AC-03 – Partial Execution
+
+Given an order is partially executed,
+when the partial execution is received,
+then the system should record the executed quantity and update the remaining quantity.
+
+AC-04 – Trade Record
+
+Given a trade has been executed,
+when the trade is processed successfully,
+then the system should store the trade record for future reference.
+
+AC-05 – Confirmation Availability
+
+Given a trade has been completed,
+when the trader opens the trade history,
+then the corresponding trade confirmation should be available.
+
+AC-06 – Failed Processing
+
+Given a trade confirmation cannot be generated,
+when the system encounters a processing failure,
+then the system should record the error and notify the appropriate process or user.
+
+Business Rules
+
+- Every executed trade must have a unique trade ID.
+- Trade confirmation details must match the executed trade.
+- Partial executions must be recorded separately or according to the configured trade-processing rules.
+- Trade records must be retained according to applicable business and regulatory requirements.
+
+Expected Business Value
+
+This functionality provides an auditable record of executed trades and gives traders clear confirmation of their completed transactions.
