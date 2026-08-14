@@ -109,3 +109,63 @@ Business Rules
 Expected Business Value
 
 This functionality enables traders to efficiently place equity buy orders while ensuring that orders comply with defined trading and risk rules.
+
+User Story 3 – Sell Order Placement
+
+Story ID: US-003
+Epic: Order Management
+Priority: High
+
+User Story
+
+As a Trader, I want to place a sell order for an equity, so that I can sell my holdings at my desired price and quantity.
+
+Acceptance Criteria
+
+AC-01 – Enter Sell Order Details
+
+Given the trader has selected an equity,
+when the trader enters the sell order details,
+then the system should allow the trader to enter quantity, order type, and price where applicable.
+
+AC-02 – Validate Holdings
+
+Given the trader wants to sell an equity,
+when the trader enters the quantity,
+then the system should verify that the trader has sufficient eligible holdings to sell.
+
+AC-03 – Mandatory Fields
+
+Given the trader is placing a sell order,
+when any mandatory field is missing,
+then the system should prevent order submission and display an appropriate validation message.
+
+AC-04 – Order Validation
+
+Given all required order details have been entered,
+when the trader submits the sell order,
+then the system should validate the order against applicable trading and risk rules.
+
+AC-05 – Successful Submission
+
+Given the sell order passes all validations,
+when the trader confirms the order,
+then the system should submit the order and generate a unique order ID.
+
+AC-06 – Failed Submission
+
+Given the order fails validation or cannot be submitted,
+when the trader confirms the order,
+then the system should reject the order and display the reason for rejection.
+
+Business Rules
+
+- The sell quantity must be greater than zero.
+- The trader must have sufficient eligible holdings to sell.
+- Mandatory order fields must be completed before submission.
+- Orders must pass applicable trading and risk validations.
+- Every successfully submitted order must have a unique order ID.
+
+Expected Business Value
+
+This functionality enables traders to sell equity holdings efficiently while ensuring that orders comply with holding, trading, and risk validation rules.
