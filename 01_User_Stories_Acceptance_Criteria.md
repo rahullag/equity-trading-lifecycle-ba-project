@@ -465,3 +465,62 @@ Business Rules
 Expected Business Value
 
 This functionality provides an auditable record of executed trades and gives traders clear confirmation of their completed transactions.
+
+User Story 9 – Transaction History
+
+Story ID: US-009
+Epic: Trade Processing
+Priority: High
+
+User Story
+
+As an Investor, I want to view my transaction history, so that I can review my previous trading activities and transactions.
+
+Acceptance Criteria
+
+AC-01 – View Transactions
+
+Given the investor has completed transactions,
+when the investor opens transaction history,
+then the system should display the available transaction records.
+
+AC-02 – Transaction Details
+
+Given a transaction is displayed,
+when the investor views the transaction,
+then the system should show the transaction ID, security, buy/sell side, quantity, price, date, and transaction status.
+
+AC-03 – Filter Transactions
+
+Given the investor has multiple transactions,
+when the investor applies filters such as date, security, or transaction type,
+then the system should display only matching transactions.
+
+AC-04 – Transaction Search
+
+Given transaction records are available,
+when the investor searches using a supported transaction identifier or security,
+then the system should display the relevant transaction records.
+
+AC-05 – No Matching Records
+
+Given no transaction matches the selected search or filter criteria,
+when the investor performs the search,
+then the system should display an appropriate message.
+
+AC-06 – Transaction Details
+
+Given the investor selects a specific transaction,
+when the transaction details are opened,
+then the system should display the complete available transaction information.
+
+Business Rules
+
+- Transaction records must be associated with the appropriate investor account.
+- Only authorized users should be able to access transaction history.
+- Transaction records must not be modified without appropriate authorization and audit controls.
+- Historical transactions should be retained according to applicable business and regulatory requirements.
+
+Expected Business Value
+
+This functionality enables investors to review their trading activity, support portfolio analysis, and maintain a clear historical record of transactions.
