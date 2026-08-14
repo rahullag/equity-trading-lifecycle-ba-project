@@ -287,3 +287,62 @@ Business Rules
 Expected Business Value
 
 This functionality allows traders to manage open orders effectively and reduces the risk of unintended trade execution.
+
+User Story 6 – Portfolio View
+
+Story ID: US-006
+Epic: Portfolio Management
+Priority: High
+
+User Story
+
+As an Investor, I want to view my current equity holdings and portfolio value, so that I can monitor my investments and overall portfolio position.
+
+Acceptance Criteria
+
+AC-01 – View Holdings
+
+Given the investor has equity holdings,
+when the investor opens the portfolio,
+then the system should display the securities currently held.
+
+AC-02 – Holding Details
+
+Given a security is available in the portfolio,
+when the investor views the holding,
+then the system should display the security name, quantity, average purchase price, and current market price.
+
+AC-03 – Portfolio Value
+
+Given current market prices are available,
+when the investor views the portfolio,
+then the system should calculate and display the current portfolio value.
+
+AC-04 – Portfolio Allocation
+
+Given the investor has multiple securities,
+when the portfolio is displayed,
+then the system should provide the allocation of holdings based on the configured calculation method.
+
+AC-05 – No Holdings
+
+Given the investor does not have any equity holdings,
+when the investor opens the portfolio,
+then the system should display an appropriate message indicating that no holdings are available.
+
+AC-06 – Data Update
+
+Given market prices or holdings change,
+when updated information becomes available,
+then the portfolio should reflect the latest available information.
+
+Business Rules
+
+- Portfolio holdings should be linked to the investor's account.
+- Current portfolio value should be based on the latest available market price.
+- Only authorized users should be able to view portfolio information.
+- Portfolio calculations must use consistent and defined calculation rules.
+
+Expected Business Value
+
+This functionality provides investors with a consolidated view of their holdings and portfolio value, enabling better investment monitoring and decision-making.
