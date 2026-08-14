@@ -824,3 +824,63 @@ Business Rules
 Expected Business Value
 
 This functionality keeps traders informed about important order and trade events, reducing the need for continuous manual monitoring.
+
+User Story 15 – Trading Dashboard & Reporting
+
+Story ID: US-015
+Epic: Reporting & Analytics
+Priority: High
+
+User Story
+
+As a Trader, I want to view a consolidated trading dashboard and reports, so that I can monitor my trading activity, portfolio performance, and key trading metrics.
+
+Acceptance Criteria
+
+AC-01 – Dashboard Overview
+
+Given the trader has access to the trading dashboard,
+when the dashboard is opened,
+then the system should display a consolidated view of relevant trading information.
+
+AC-02 – Trading Activity
+
+Given the trader has submitted or executed orders,
+when the dashboard is viewed,
+then the system should display relevant trading activity such as order count, executed trades, and order status summary.
+
+AC-03 – Portfolio Performance
+
+Given the trader has portfolio holdings,
+when the dashboard is viewed,
+then the system should display relevant portfolio metrics such as portfolio value and profit or loss.
+
+AC-04 – Date Filter
+
+Given historical trading information is available,
+when the trader selects a date range,
+then the dashboard and applicable reports should display information for the selected period.
+
+AC-05 – Report Generation
+
+Given the trader has selected the required reporting criteria,
+when the trader requests a report,
+then the system should generate a report containing the applicable trading information.
+
+AC-06 – Data Accuracy
+
+Given trading and portfolio data is available,
+when the dashboard or report is generated,
+then the displayed information should be based on the latest available authorized data.
+
+Business Rules
+
+- Dashboard information must be restricted to authorized users.
+- Reports must use defined and consistent calculation rules.
+- Date filters must apply consistently to supported dashboard metrics and reports.
+- Report data must be traceable to the underlying trading records.
+- Sensitive trading information must be protected according to applicable access controls.
+
+Expected Business Value
+
+This functionality provides traders with a consolidated view of trading activity and portfolio performance, supporting monitoring, analysis, and informed decision-making.
