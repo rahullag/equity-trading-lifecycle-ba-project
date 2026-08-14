@@ -705,3 +705,63 @@ Business Rules
 Expected Business Value
 
 This functionality enables traders to participate in the options market while ensuring that contract, quantity, expiry, and trading rules are validated before order submission.
+
+User Story 13 – Options Contract Information
+
+Story ID: US-013
+Epic: Derivatives Trading
+Priority: Medium
+
+User Story
+
+As a Trader, I want to view detailed options contract information, so that I can evaluate an option before placing a trade.
+
+Acceptance Criteria
+
+AC-01 – Contract Search
+
+Given the trader is on the options trading screen,
+when the trader searches for an options contract,
+then the system should display matching active contracts.
+
+AC-02 – Contract Information
+
+Given an options contract is selected,
+when the trader views the contract details,
+then the system should display the underlying asset, Call/Put type, strike price, expiry date, contract size, and latest available price.
+
+AC-03 – Market Information
+
+Given market data is available for the selected contract,
+when the trader views the contract,
+then the system should display the latest available market price and applicable price change information.
+
+AC-04 – Contract Expiry
+
+Given an options contract has an expiry date,
+when the trader views the contract,
+then the system should clearly display the expiry date.
+
+AC-05 – Invalid or Expired Contract
+
+Given a contract is expired or unavailable for trading,
+when the trader searches for the contract,
+then the system should identify it as unavailable for new trading.
+
+AC-06 – Contract Selection
+
+Given multiple contracts match the trader's search,
+when the trader reviews the results,
+then the system should allow the trader to select the required contract.
+
+Business Rules
+
+- Only supported options contracts should be displayed for trading.
+- Contract details must correspond to the selected instrument.
+- Expired contracts must not be available for new order placement.
+- Market information must be clearly identified as the latest available data.
+- Contract information should be accessible only to authorized users.
+
+Expected Business Value
+
+This functionality helps traders evaluate options contracts using standardized contract and market information before making trading decisions.
