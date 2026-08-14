@@ -169,3 +169,62 @@ Business Rules
 Expected Business Value
 
 This functionality enables traders to sell equity holdings efficiently while ensuring that orders comply with holding, trading, and risk validation rules.
+
+User Story 4 – Order Status Tracking
+
+Story ID: US-004
+Epic: Order Management
+Priority: High
+
+User Story
+
+As a Trader, I want to view the current status of my orders, so that I can track whether my orders are pending, executed, rejected, or cancelled.
+
+Acceptance Criteria
+
+AC-01 – View Order Status
+
+Given the trader has submitted an order,
+when the trader opens the order book,
+then the system should display the current status of the order.
+
+AC-02 – Status Values
+
+Given an order exists in the system,
+when the trader views the order status,
+then the system should display an appropriate status such as Pending, Open, Executed, Rejected, or Cancelled.
+
+AC-03 – Order Details
+
+Given the trader selects an order,
+when the order details are displayed,
+then the system should show the order ID, equity, order type, quantity, price, and order status.
+
+AC-04 – Status Update
+
+Given an order status changes,
+when the updated status is received by the system,
+then the system should display the latest available order status.
+
+AC-05 – Rejected Order
+
+Given an order is rejected,
+when the trader views the order,
+then the system should display the rejected status and the applicable rejection reason where available.
+
+AC-06 – Order History
+
+Given the trader has multiple orders,
+when the trader opens the order book,
+then the system should allow the trader to review previously submitted orders.
+
+Business Rules
+
+- Every submitted order must have a unique order ID.
+- Order status must reflect the latest available status from the trading system.
+- Rejected orders should have an appropriate rejection reason where available.
+- Order history should be accessible to the authorized trader.
+
+Expected Business Value
+
+This functionality provides transparency into the order lifecycle and enables traders to monitor their trades and take appropriate action.
