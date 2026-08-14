@@ -584,3 +584,63 @@ Business Rules
 Expected Business Value
 
 This functionality helps control trading risk, prevents orders that violate defined limits, and provides an auditable validation process for the trading lifecycle.
+
+User Story 11 – Futures Order Placement
+
+Story ID: US-011
+Epic: Derivatives Trading
+Priority: High
+
+User Story
+
+As a Trader, I want to place a futures order, so that I can take a position in a futures contract based on my trading strategy.
+
+Acceptance Criteria
+
+AC-01 – Select Futures Contract
+
+Given the trader is on the derivatives trading screen,
+when the trader searches for a futures contract,
+then the system should display the available contract details.
+
+AC-02 – Contract Details
+
+Given a futures contract is selected,
+when the trader views the contract,
+then the system should display the underlying asset, expiry date, contract size, and applicable price information.
+
+AC-03 – Enter Order Details
+
+Given the trader has selected a futures contract,
+when the trader enters order details,
+then the system should allow the trader to enter buy/sell side, quantity, order type, and price where applicable.
+
+AC-04 – Contract Validation
+
+Given the trader submits a futures order,
+when the order is validated,
+then the system should check the quantity against the applicable contract and lot-size rules.
+
+AC-05 – Risk Validation
+
+Given a futures order has been submitted,
+when risk validation is performed,
+then the system should check applicable margin, exposure, and trading limits.
+
+AC-06 – Successful Submission
+
+Given the futures order passes all applicable validations,
+when the trader confirms the order,
+then the system should submit the order and generate a unique order ID.
+
+Business Rules
+
+- Futures orders must reference a valid and active contract.
+- Order quantity must comply with the applicable contract lot size.
+- The order must satisfy applicable margin and risk requirements.
+- Expired contracts must not be available for new order placement.
+- Every successfully submitted order must have a unique order ID.
+
+Expected Business Value
+
+This functionality enables traders to participate in the futures market while ensuring that contract, quantity, margin, and risk requirements are validated before order submission.
