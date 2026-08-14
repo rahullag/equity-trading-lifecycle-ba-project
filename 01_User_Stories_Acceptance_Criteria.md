@@ -765,3 +765,62 @@ Business Rules
 Expected Business Value
 
 This functionality helps traders evaluate options contracts using standardized contract and market information before making trading decisions.
+
+User Story 14 – Trade Notifications
+
+Story ID: US-014
+Epic: Notifications & Communication
+Priority: Medium
+
+User Story
+
+As a Trader, I want to receive notifications about important order and trade events, so that I can stay informed about the status of my trading activity.
+
+Acceptance Criteria
+
+AC-01 – Order Submission Notification
+
+Given a trader has successfully submitted an order,
+when the order is accepted by the system,
+then the system should provide a notification confirming the order submission.
+
+AC-02 – Order Execution Notification
+
+Given an order has been executed,
+when the execution is received by the system,
+then the system should notify the trader of the execution.
+
+AC-03 – Order Rejection Notification
+
+Given an order has been rejected,
+when the rejection is received,
+then the system should notify the trader and provide the rejection reason where available.
+
+AC-04 – Order Cancellation Notification
+
+Given an eligible order has been cancelled,
+when the cancellation is successfully processed,
+then the system should notify the trader of the updated status.
+
+AC-05 – Notification Details
+
+Given a trade-related notification is generated,
+when the trader views the notification,
+then it should contain relevant information such as order ID, security, event type, and status.
+
+AC-06 – Notification History
+
+Given notifications have been generated,
+when the trader opens the notification history,
+then the system should display previously generated notifications.
+
+Business Rules
+
+- Notifications should be generated for configured trading events.
+- Notifications must contain accurate order or trade information.
+- Only authorized users should receive account-specific trading notifications.
+- Notification records should be retained according to configured business requirements.
+
+Expected Business Value
+
+This functionality keeps traders informed about important order and trade events, reducing the need for continuous manual monitoring.
